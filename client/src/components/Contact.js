@@ -1,0 +1,22 @@
+import React from 'react';
+import '../styles/Contact.css';
+
+function Contact() {
+  return (
+    <div className="container">
+      <h1 className="sectionHeader">CONTACT</h1>
+      <div className="contact">
+        <div>
+          <i className="icon-mail contactIcon"/>
+          <h3 className="contactValue"><a href="mailto:edyta@gmail.com">edyta@gmail.com</a></h3>
+        </div>
+        <div>
+          <i className="icon-phone contactIcon"/>
+          <h3 className="contactValue"><a href="tel:+48 999 999 000">+48 999 999 000</a></h3>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Contact;

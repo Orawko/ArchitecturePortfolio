@@ -1,0 +1,104 @@
+.Website {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 10px;
+}
+
+.headerBackground {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+.headerBackground2 {
+    width: 100vw;
+    height: 100vh;
+    visibility: hidden;
+}
+
+.headerBackground img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+}
+
+.headerNav {
+    width: 100%;
+    min-height: 30px;
+    position: absolute;
+    top: 0;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: 100;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    max-width: 50vw;
+    font-size: 3vw;
+}
+
+nav div {
+    height: 100%;
+    margin: 10px;
+    transition: transform .5s ease;
+    text-align: right;
+}
+
+nav div:hover {
+    height: 100%;
+    margin: 10px;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.title {
+    font-size: 8vw;
+    margin: 2vw;
+    text-align: left;
+}
+
+.sectionHeader {
+    max-width: 100%;
+    font-size: 8vw;
+    padding: 10px;
+    margin: 2vw 0 0;
+    text-align: left;
+    font-weight: 100;
+}
+
+@media only screen and (max-width: 767px) {
+    .title {
+        font-size: 60px;
+        text-align: center;
+    }
+}
+
+.background {
+    width: 100%;
+    background-color: white;
+}

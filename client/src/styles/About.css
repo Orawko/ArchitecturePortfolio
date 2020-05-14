@@ -1,0 +1,52 @@
+.aboutMePhoto {
+    width: 30vw;
+    height: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+    border-radius: 100%;
+}
+
+.aboutMePhoto img {
+    flex-shrink: 0;
+    max-height: 30vw;
+}
+
+.aboutMe {
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    justify-content: center;
+    margin: 4vw auto 2vw;
+}
+
+.aboutMeText {
+    font-size: 25px;
+    font-weight: normal;
+    width: 40vw;
+    margin: auto;
+}
+
+@media only screen and (max-width: 767px) {
+    .aboutMe {
+        flex-direction: column;
+    }
+
+    .aboutMePhoto {
+        margin: auto;
+        width: 50vw;
+        height: 50vw;
+    }
+
+    .aboutMePhoto img {
+        flex-shrink: 0;
+        max-height: 50vw;
+    }
+
+    .aboutMeText {
+        width: 80vw;
+        margin: auto;
+        font-size: 20px;
+    }
+}
