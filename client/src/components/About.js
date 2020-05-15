@@ -7,7 +7,7 @@ function About({ setRef }) {
 
   React.useEffect(() => {
     setRef(aboutmeRef);
-  }, []);
+  }, [setRef]);
 
   return (
     <div className="container" ref={aboutmeRef}>

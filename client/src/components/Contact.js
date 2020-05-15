@@ -6,7 +6,7 @@ function Contact({ setRef }) {
 
   React.useEffect(() => {
     setRef(contactRef);
-  }, []);
+  }, [setRef]);
 
   return (
     <div className="container" ref={contactRef}>
