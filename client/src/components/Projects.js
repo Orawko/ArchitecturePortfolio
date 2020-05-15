@@ -5,7 +5,11 @@ import data from '../data/projects.json';
 
 function Projects({ setRef }) {
   const projectsRef = useRef();
-  setRef(projectsRef);
+
+  React.useEffect(() => {
+    setRef(projectsRef);
+  }, []);
+
   return (
     <div className="container" ref={projectsRef}>
       <h2 className="sectionHeader">PROJECTS</h2>

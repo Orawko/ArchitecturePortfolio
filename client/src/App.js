@@ -19,10 +19,7 @@ export default class App extends Component {
     };
   }
 
-  setProjectsRef = (ref) => {
-    console.log('here');
-    this.setState({ projectsRef: ref });
-  };
+  setProjectsRef = (ref) => this.setState({ projectsRef: ref });
   setAboutmeRef = (ref) => this.setState({ aboutmeRef: ref });
   setContactRef = (ref) => this.setState({ contactRef: ref });
 
@@ -35,9 +32,9 @@ export default class App extends Component {
       <div className="Website">
         <Header projectsRef={this.getProjectsRef} aboutmeRef={this.getAboutmeRef} contactRef={this.getContactRef}/>
         <main>
-          <Projects setRef={this.setProjectsRef.bind(this)}/>
-          <About setRef={this.setAboutmeRef.bind(this)}/>
-          <Contact setRef={this.setContactRef.bind(this)}/>
+          <Projects setRef={this.setProjectsRef}/>
+          <About setRef={this.setAboutmeRef}/>
+          <Contact setRef={this.setContactRef}/>
         </main>
         <footer>
           &copy; Bartłomiej Orawiec 2020 <a href="https://github.com/Orawko">Github</a>

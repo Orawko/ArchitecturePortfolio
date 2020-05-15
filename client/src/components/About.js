@@ -4,7 +4,11 @@ import '../styles/About.css';
 
 function About({ setRef }) {
   const aboutmeRef = useRef();
-  setRef(aboutmeRef);
+
+  React.useEffect(() => {
+    setRef(aboutmeRef);
+  }, []);
+
   return (
     <div className="container" ref={aboutmeRef}>
       <h2 className="sectionHeader">ABOUT ME</h2>
