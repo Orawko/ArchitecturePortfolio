@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { Component } from 'react';
 import Header from './components/Header';
 import About from './components/About';
 import Projects from './components/Projects';
@@ -6,28 +6,43 @@ import Contact from './components/Contact';
 import './styles/Main.css';
 import './fontello/css/fontello.css';
 
-export default function App() {
-  let [projectsRef, aboutmeRef, contactRef] = useState(0);
+export default class App extends Component {
+  constructor(props) {
+    super(props);
 
-  const setProjectsRef = (ref) => projectsRef = ref;
-  const setAboutmeRef = (ref) => aboutmeRef = ref;
-  const setContactRef = (ref) => contactRef = ref;
+    this.state = {
+      photoIndex: 0,
+      isOpen: false,
+      projectsRef: null,
+      aboutmeRef: null,
+      contactRef: null,
+    };
+  }
 
-  const getContactRef = () => contactRef;
-  const getAboutmeRef = () => aboutmeRef;
-  const getProjectsRef = () => projectsRef;
+  setProjectsRef = (ref) => {
+    console.log('here');
+    this.setState({ projectsRef: ref });
+  };
+  setAboutmeRef = (ref) => this.setState({ aboutmeRef: ref });
+  setContactRef = (ref) => this.setState({ contactRef: ref });
 
-  return (
-    <div className="Website">
-      <Header projectsRef={getProjectsRef} aboutmeRef={getAboutmeRef} contactRef={getContactRef}/>
-      <main>
-        <Projects setRef={setProjectsRef.bind(this)}/>
-        <About setRef={setAboutmeRef.bind(this)}/>
-        <Contact setRef={setContactRef.bind(this)}/>
-      </main>
-      <footer>
-        &copy; Bartłomiej Orawiec 2020 <a href="https://github.com/Orawko">Github</a>
-      </footer>
-    </div>
-  );
+  getAboutmeRef = () => this.state.aboutmeRef;
+  getProjectsRef = () => this.state.projectsRef;
+  getContactRef = () => this.state.contactRef;
+
+  render() {
+    return (
+      <div className="Website">
+        <Header projectsRef={this.getProjectsRef} aboutmeRef={this.getAboutmeRef} contactRef={this.getContactRef}/>
+        <main>
+          <Projects setRef={this.setProjectsRef.bind(this)}/>
+          <About setRef={this.setAboutmeRef.bind(this)}/>
+          <Contact setRef={this.setContactRef.bind(this)}/>
+        </main>
+        <footer>
+          &copy; Bartłomiej Orawiec 2020 <a href="https://github.com/Orawko">Github</a>
+        </footer>
+      </div>
+    );
+  }
 }
