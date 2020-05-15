@@ -3,7 +3,11 @@ import '../styles/Contact.css';
 
 function Contact({ setRef }) {
   const contactRef = useRef();
-  setRef(contactRef);
+
+  React.useEffect(() => {
+    setRef(contactRef);
+  }, [setRef]);
+
   return (
     <div className="container" ref={contactRef}>
       <h2 className="sectionHeader">CONTACT</h2>
