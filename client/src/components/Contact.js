@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import '../styles/Contact.css';
 
-function Contact() {
+function Contact({ setRef }) {
+  const contactRef = useRef();
+  setRef(contactRef);
   return (
-    <div className="container">
-      <h1 className="sectionHeader">CONTACT</h1>
+    <div className="container" ref={contactRef}>
+      <h2 className="sectionHeader">CONTACT</h2>
       <div className="contact">
         <div>
           <i className="icon-mail contactIcon"/>

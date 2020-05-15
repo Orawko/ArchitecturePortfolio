@@ -3,8 +3,8 @@ import React from 'react';
 function Project({ data }) {
   return (
     <div className="project">
-      <div className="projectSpecs">
-        <h1 className="projectTitle">{data.title}</h1>
+      <article className="projectSpecs">
+        <h3 className="projectTitle">{data.title}</h3>
         <p className="projectDescription">
           {data.description}
         </p>
@@ -26,9 +26,9 @@ function Project({ data }) {
             <h3 className="detailValue">{data.details.tools}</h3>
           </div>
         </div>
-      </div>
+      </article>
       <div className="projectPhoto">
-        <img src={require(`../img/${data.img}`)} alt="Architecture building"/>
+        <img src={require(`../img/${data.img}`)} alt={data.alt}/>
       </div>
     </div>
   );
