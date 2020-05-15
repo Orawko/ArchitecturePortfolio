@@ -1,0 +1,31 @@
+
+.icon-mail:before {
+    content: '\e800';
+}
+
+/* '' */
+.icon-phone:before {
+    content: '\e801';
+}
+
+/* '' */
+.icon-pencil:before {
+    content: '\e802';
+}
+
+/* '' */
+.icon-location:before {
+    content: '\e803';
+}
+
+/* '' */
+.icon-calendar:before {
+    content: '\e804';
+}
+
+/* '' */
+.icon-warehouse:before {
+    content: '\e840';
+}
+
+/* '' */

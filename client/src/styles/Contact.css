@@ -1,0 +1,55 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    align-content: center;
+    margin: 1vw auto 4vw;
+}
+
+.contact div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1vw;
+    transition: transform .5s ease;
+}
+
+.contact div:hover {
+    transform: scale(1.1);
+}
+
+.contactIcon {
+    font-size: 55px;
+}
+
+.contactValue {
+    font-size: 50px;
+    font-weight: 100;
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+.contactValue a {
+    text-decoration: none;
+    color: black;
+}
+
+@media only screen and (max-width: 1023px) {
+    .contactValue {
+        font-size: 35px;
+    }
+
+    .contactIcon {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .contactValue {
+        font-size: 20px;
+    }
+
+    .contactIcon {
+        font-size: 25px;
+    }
+}

@@ -1,0 +1,117 @@
+.Website {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    width: 100%;
+    background-color: white;
+    z-index: 10;
+}
+
+.container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: auto;
+}
+
+.headerBackground {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+    position: fixed;
+    z-index: 1;
+}
+
+.headerBackground img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+}
+
+.contentOffset {
+    width: 100vw;
+    height: 100vh;
+    visibility: hidden;
+}
+
+.headerNav {
+    width: 100%;
+    min-height: 30px;
+    position: absolute;
+    top: 0;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: 100;
+    z-index: 10;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    max-width: 34%;
+    font-size: 2vw;
+}
+
+nav div {
+    margin: 1vw 2vw;
+    transition: transform .5s ease;
+    text-align: right;
+}
+
+nav div:hover {
+    margin: 1vw 2vw;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.title {
+    max-width: 66%;
+    font-size: 10vw;
+    margin: 2vw;
+    text-align: left;
+    font-weight: 100;
+}
+
+.sectionHeader {
+    max-width: 100%;
+    font-size: 8vw;
+    padding: 10px;
+    margin: 2vw 0 0;
+    text-align: left;
+    font-weight: 100;
+}
+
+footer {
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 10px;
+    z-index: 10;
+}
+
+@media only screen and (max-width: 1023px) {
+    nav div {
+        font-size: 4vw;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    nav div {
+        font-size: 5vw;
+        margin: 2vw;
+    }
+
+    nav div:hover {
+        margin: 2vw;
+    }
+}

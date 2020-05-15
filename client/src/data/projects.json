@@ -1,0 +1,14 @@
+{
+  "sport_centre": {
+    "title": "SPORTS CENTRE",
+    "description": "Vivamus quis nisi in tortor lacinia imperdiet ut non leo. Aliquam auctor dictum est. Morbi scelerisque tellus arcu, quis vehicula diam rutrum non. Proin nec pulvinar risus. Nunc leo ex, rutrum in tristique vitae, malesuada in eros. Vestibulum nec molestie nisl. Pellentesque vitae orci et libero ullamcorper hendrerit sit amet ut nunc.",
+    "details": {
+      "type": "Public building",
+      "location": "Troniny",
+      "date": "02.05.2019",
+      "tools": "ArchiCAD, AutoCAD, Revit"
+    },
+    "img": "sports_centre.jpg",
+    "alt": "Sport centre building"
+  }
+}
