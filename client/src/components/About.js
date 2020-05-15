@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import about from '../data/about.json';
 import '../styles/About.css';
 
-function About() {
+function About({ setRef }) {
+  const aboutmeRef = useRef();
+  setRef(aboutmeRef);
   return (
-    <div className="container">
-      <h1 className="sectionHeader">ABOUT ME</h1>
+    <div className="container" ref={aboutmeRef}>
+      <h2 className="sectionHeader">ABOUT ME</h2>
       <div className="aboutMe">
         <div className="aboutMePhoto">
           <img src={require('../img/aboutMePhoto.png')} alt="Me"/>

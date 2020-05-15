@@ -1,14 +1,17 @@
 import React from 'react';
 import HeaderNav from './HeaderNav';
 
-function Header() {
+function Header({ projectsRef, aboutmeRef, contactRef }) {
+  console.log(contactRef);
   return (
-    <div className="headercontainer">
-      <HeaderNav/>
+    <header className="headercontainer">
+      <HeaderNav projectsRef={projectsRef} aboutmeRef={aboutmeRef} contactRef={contactRef}/>
       <div className="headerBackground">
         <img src={require('../img/header.jpg')} alt="Architecture building"/>
       </div>
-    </div>
+      <div className="contentOffset">
+      </div>
+    </header>
   );
 }
 

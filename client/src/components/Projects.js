@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import '../styles/Projects.css';
 import Project from '../components/Project';
 import data from '../data/projects.json';
 
-function Projects() {
+function Projects({ setRef }) {
+  const projectsRef = useRef();
+  setRef(projectsRef);
   return (
-    <div className="container">
-      <h1 className="sectionHeader">PROJECTS</h1>
+    <div className="container" ref={projectsRef}>
+      <h2 className="sectionHeader">PROJECTS</h2>
       <div className="projects">
         <Project data={data.sport_centre}/>
         <Project data={data.sport_centre}/>
