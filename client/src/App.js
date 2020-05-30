@@ -39,7 +39,7 @@ export default class App extends Component {
   };
 
   closeViewer = () => {
-    this.setState({ isOpen: false });
+    this.setState({ isOpen: false, photoIndex: 0 });
   };
 
   openGallery = projectNumber => {

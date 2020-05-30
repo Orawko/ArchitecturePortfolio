@@ -14,11 +14,15 @@ function Contact({ setRef }) {
       <div className="contact">
         <div>
           <i className="icon-mail contactIcon"/>
-          <h3 className="contactValue"><a href="mailto:edyta@gmail.com">edyta@gmail.com</a></h3>
+          <h3 className="contactValue"><a href="mailto:edytamakowiec@gmail.com">edytamakowiec@gmail.com</a></h3>
         </div>
         <div>
           <i className="icon-phone contactIcon"/>
-          <h3 className="contactValue"><a href="tel:+48 999 999 000">+48 999 999 000</a></h3>
+          <h3 className="contactValue"><a href="tel:+48507501862">+48 507 501 862</a></h3>
+        </div>
+        <div>
+          <i className="icon-instagram contactIcon"/>
+          <h3 className="contactValue"><a href="https://www.instagram.com/world.of.watercolor/">Instagram</a></h3>
         </div>
       </div>
     </div>

@@ -14,10 +14,10 @@ function Projects({ setRef, openGallery }) {
     <div className="container" ref={projectsRef}>
       <h2 className="sectionHeader">PROJECTS</h2>
       <div className="projects">
-        <Project data={data.sport_centre} openGallery={openGallery} number={0}/>
-        <Project data={data.sport_centre} openGallery={openGallery} number={1}/>
+        <Project data={data.source_of_inspiration} openGallery={openGallery} number={3}/>
         <Project data={data.sport_centre} openGallery={openGallery} number={2}/>
-        <Project data={data.sport_centre} openGallery={openGallery} number={3}/>
+        <Project data={data.regietow} openGallery={openGallery} number={1}/>
+        <Project data={data.bagry} openGallery={openGallery} number={0}/>
       </div>
     </div>
   );

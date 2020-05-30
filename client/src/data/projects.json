@@ -1,14 +1,50 @@
 {
   "sport_centre": {
     "title": "SPORTS CENTRE",
-    "description": "Vivamus quis nisi in tortor lacinia imperdiet ut non leo. Aliquam auctor dictum est. Morbi scelerisque tellus arcu, quis vehicula diam rutrum non. Proin nec pulvinar risus. Nunc leo ex, rutrum in tristique vitae, malesuada in eros. Vestibulum nec molestie nisl. Pellentesque vitae orci et libero ullamcorper hendrerit sit amet ut nunc.",
+    "description": "Sport centre is designed to provide residents a friendly and high quality public space. The building is located on a forest plot, surrounded by a beautiful natural environment. This location has become an impulse to propose an object almost entirely made of wood. This natural material will create the right atmosphere of this place. An additional advantage of its use is easy and quick assembly from prefabricated elements, obtaining light and visually aesthetic spaces. Choosing a sports function of a building results from the demand of residents for this type of public space, giving the opportunity not only to organize sports competitions, but also other cultural events.",
     "details": {
       "type": "Public building",
       "location": "Troniny",
-      "date": "02.05.2019",
-      "tools": "ArchiCAD, AutoCAD, Revit"
+      "date": "2020",
+      "tools": "ArchiCAD, Lumion, Adobe Photoshop"
     },
     "img": "sports_centre.jpg",
+    "alt": "Sport centre building"
+  },
+  "bagry": {
+    "title": "BAGRY KRAKOW",
+    "description": "The premise of the project is to give new life to the areas surrounding the Bagry reservoir. The total area of the area within the development of the urban concept is 171.3 ha. The area includes elements with various functions, building typology and urban morphology. However, the most important part of the project is the area of the immediate vicinity of the lake, whose design is aimed at giving high tourist values and creating a friendly public space.",
+    "details": {
+      "type": "Urban planning",
+      "location": "Krakow",
+      "date": "2018/2019",
+      "tools": "AutoCAD, Adobe Photoshop "
+    },
+    "img": "bagry.jpg",
+    "alt": "Sport centre building"
+  },
+  "regietow": {
+    "title": "HOLIDAY COTTAGES",
+    "description": "The farm complex with a stud, a group of summer houses and an outdoor riding school was designed on the southern edge of the village, in isolation from other buildings, as a riding point cooperating with the existing Huculski horse farm.\nIt is designed in a radial arrangement, in the central part houses a stable with access to the riding school. To the west of them is the house of the owners - designed as a three-generation building. Around them, in a semi-circular arrangement, is a holiday cottages complex.",
+    "details": {
+      "type": "Farm buildings",
+      "location": "Regietow",
+      "date": "2019",
+      "tools": "ArchiCAD, Lumion, Adobe Photoshop"
+    },
+    "img": "regietow.jpg",
+    "alt": "Sport centre building"
+  },
+  "source_of_inspiration": {
+    "title": "SOURCE OF INSPIRATION",
+    "description": "“Sources of inspiration” is a project of Art hotel where the creation process is surrounded by the water. Everything starts in the meditation template located in a cave. We can find sources of the water and brain wave there. From that point creation process follow the water flow. Mistical atmosphere in the temple help the artists in a meditation, concentration and idea development. Those ideas can be developed in Park cabins, which „growing out” of the ground in the park. Following the water stream, following step is Artists’ house. The place, where ideas become a reality. Workshops space, theater and artist rooms provide a space needed to creation process. The last step, right after waterfalls is gallery - the main entrance to the Art Hotel.",
+    "details": {
+      "type": "Public building",
+      "location": "Turin",
+      "date": "2020",
+      "tools": "AutoCAD, SketchUp, Adobe Photoshop"
+    },
+    "img": "source_of_inspiration.jpg",
     "alt": "Sport centre building"
   }
 }

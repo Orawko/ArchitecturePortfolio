@@ -14,7 +14,7 @@ function About({ setRef }) {
       <h2 className="sectionHeader">ABOUT ME</h2>
       <div className="aboutMe">
         <div className="aboutMePhoto">
-          <img src={require('../img/aboutMePhoto.png')} alt="Me"/>
+          <img src={require('../img/aboutMePhoto.jpg')} alt="Me"/>
         </div>
         <div className="aboutMeText">
           <p>{about.description}</p>

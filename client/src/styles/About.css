@@ -18,6 +18,7 @@
     flex-direction: row;
     width: 80vw;
     justify-content: center;
+    text-align: left;
     margin: 4vw auto 2vw;
 }
 
@@ -31,6 +32,7 @@
 @media only screen and (max-width: 1023px) {
     .aboutMe {
         flex-direction: column;
+        text-align: center;
     }
 
     .aboutMePhoto {
@@ -47,6 +49,7 @@
 @media only screen and (max-width: 767px) {
     .aboutMe {
         flex-direction: column;
+        text-align: center;
     }
 
     .aboutMePhoto {
