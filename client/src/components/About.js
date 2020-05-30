@@ -4,13 +4,17 @@ import '../styles/About.css';
 
 function About({ setRef }) {
   const aboutmeRef = useRef();
-  setRef(aboutmeRef);
+
+  React.useEffect(() => {
+    setRef(aboutmeRef);
+  }, [setRef]);
+
   return (
     <div className="container" ref={aboutmeRef}>
       <h2 className="sectionHeader">ABOUT ME</h2>
       <div className="aboutMe">
         <div className="aboutMePhoto">
-          <img src={require('../img/aboutMePhoto.png')} alt="Me"/>
+          <img src={require('../img/aboutMePhoto.jpg')} alt="Me"/>
         </div>
         <div className="aboutMeText">
           <p>{about.description}</p>

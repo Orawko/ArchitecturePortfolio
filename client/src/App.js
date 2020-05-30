@@ -1,33 +1,77 @@
-import React, { useState } from 'react';
+import React, { Component, Fragment } from 'react';
 import Header from './components/Header';
 import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import './styles/Main.css';
 import './fontello/css/fontello.css';
+import ImgsViewer from 'react-images-viewer';
+import paths from './data/projectImgPaths';
 
-export default function App() {
-  let [projectsRef, aboutmeRef, contactRef] = useState(0);
+export default class App extends Component {
+  constructor(props) {
+    super(props);
 
-  const setProjectsRef = (ref) => projectsRef = ref;
-  const setAboutmeRef = (ref) => aboutmeRef = ref;
-  const setContactRef = (ref) => contactRef = ref;
+    this.state = {
+      photoIndex: 0,
+      isOpen: false,
+      projectsRef: null,
+      aboutmeRef: null,
+      contactRef: null,
+      galleryPhotos: paths[0],
+    };
+  }
 
-  const getContactRef = () => contactRef;
-  const getAboutmeRef = () => aboutmeRef;
-  const getProjectsRef = () => projectsRef;
+  setProjectsRef = (ref) => this.setState({ projectsRef: ref });
+  setAboutmeRef = (ref) => this.setState({ aboutmeRef: ref });
+  setContactRef = (ref) => this.setState({ contactRef: ref });
 
-  return (
-    <div className="Website">
-      <Header projectsRef={getProjectsRef} aboutmeRef={getAboutmeRef} contactRef={getContactRef}/>
-      <main>
-        <Projects setRef={setProjectsRef.bind(this)}/>
-        <About setRef={setAboutmeRef.bind(this)}/>
-        <Contact setRef={setContactRef.bind(this)}/>
-      </main>
-      <footer>
-        &copy; Bartłomiej Orawiec 2020 <a href="https://github.com/Orawko">Github</a>
-      </footer>
-    </div>
-  );
+  getAboutmeRef = () => this.state.aboutmeRef;
+  getProjectsRef = () => this.state.projectsRef;
+  getContactRef = () => this.state.contactRef;
+
+  gotoPrevious = () => {
+    this.setState({ photoIndex: this.state.photoIndex - 1 });
+  };
+
+  gotoNext = () => {
+    this.setState({ photoIndex: this.state.photoIndex + 1 });
+  };
+
+  closeViewer = () => {
+    this.setState({ isOpen: false, photoIndex: 0 });
+  };
+
+  openGallery = projectNumber => {
+    this.setState({
+      isOpen: true,
+      galleryPhotos: paths[projectNumber],
+    });
+  };
+
+  render() {
+    return (
+      <Fragment>
+        <div className="Website">
+          <Header projectsRef={this.getProjectsRef} aboutmeRef={this.getAboutmeRef} contactRef={this.getContactRef}/>
+          <main>
+            <Projects setRef={this.setProjectsRef} openGallery={this.openGallery}/>
+            <About setRef={this.setAboutmeRef}/>
+            <Contact setRef={this.setContactRef}/>
+          </main>
+          <footer>
+            &copy; Bartłomiej Orawiec 2020 <a href="https://github.com/Orawko">Github</a>
+          </footer>
+        </div>
+        <ImgsViewer
+          imgs={this.state.galleryPhotos}
+          currImg={this.state.photoIndex}
+          isOpen={this.state.isOpen}
+          onClickPrev={this.gotoPrevious}
+          onClickNext={this.gotoNext}
+          onClose={this.closeViewer}
+        />
+      </Fragment>
+    );
+  }
 }

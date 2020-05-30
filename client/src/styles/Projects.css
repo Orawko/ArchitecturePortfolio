@@ -6,7 +6,7 @@
 }
 
 .project {
-    width: 80vw;
+    width: 90vw;
     display: flex;
     flex-direction: row;
     background-color: whitesmoke;
@@ -15,8 +15,8 @@
 }
 
 .projectPhoto {
-    width: 40vw;
-    height: 40vw;
+    width: 45vw;
+    height: 45vw;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -35,11 +35,11 @@
 }
 
 .projectSpecs {
-    width: 32vw;
+    width: 37vw;
     height: auto;
     display: flex;
     flex-direction: column;
-    padding: 4vw 4vw;
+    padding: 2vw 4vw;
     text-align: left;
 }
 
@@ -106,6 +106,36 @@ h3 {
 
     .projectDescription {
         font-size: 2.8vw;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    .projectPhoto {
+        width: 90vw;
+        height: 90vw;
+    }
+
+    .projectSpecs {
+        width: 90vw;
+    }
+
+    .projectTitle {
+        font-weight: 100;
+        font-size: 8vw;
+    }
+
+    .detailValue {
+        font-size: 4.5vw;
+    }
+
+    .detailIcon {
+        font-size: 5vw;
+    }
+
+    .projectDescription {
+        font-size: 3.5vw;
     }
 
 }

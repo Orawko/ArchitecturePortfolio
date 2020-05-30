@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Project({ data }) {
+function Project({ data, openGallery, number }) {
   return (
     <div className="project">
       <article className="projectSpecs">
@@ -27,7 +27,7 @@ function Project({ data }) {
           </div>
         </div>
       </article>
-      <div className="projectPhoto">
+      <div className="projectPhoto" onClick={() => openGallery(number)}>
         <img src={require(`../img/${data.img}`)} alt={data.alt}/>
       </div>
     </div>

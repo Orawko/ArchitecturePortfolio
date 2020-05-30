@@ -19,13 +19,13 @@
 }
 
 .contactIcon {
-    font-size: 55px;
+    font-size: 5vw;
 }
 
 .contactValue {
-    font-size: 50px;
+    font-size: 4vw;
     font-weight: 100;
-    padding: 0 10px;
+    padding: 0 1vw;
     text-decoration: none;
 }
 
@@ -34,22 +34,12 @@
     color: black;
 }
 
-@media only screen and (max-width: 1023px) {
-    .contactValue {
-        font-size: 35px;
-    }
-
-    .contactIcon {
-        font-size: 40px;
-    }
-}
-
 @media only screen and (max-width: 767px) {
     .contactValue {
-        font-size: 20px;
+        font-size: 6vw;
     }
 
     .contactIcon {
-        font-size: 25px;
+        font-size: 7vw;
     }
 }
