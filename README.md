@@ -1,2 +1,5 @@
-# ArchitecturePortfolio
-One-page application presenting the architect's portfolio
+# Architecture Portfolio
+
+One-page React application presenting Edyta Makowiec portfolio. 
+
+https://edytamakowiec.github.io/
