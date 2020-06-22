@@ -5,7 +5,8 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import './styles/Main.css';
 import './fontello/css/fontello.css';
-import ImgsViewer from 'react-images-viewer';
+import Lightbox from 'react-image-lightbox';
+import 'react-image-lightbox/style.css';
 import paths from './data/projectImgPaths';
 
 export default class App extends Component {
@@ -31,11 +32,13 @@ export default class App extends Component {
   getContactRef = () => this.state.contactRef;
 
   gotoPrevious = () => {
-    this.setState({ photoIndex: this.state.photoIndex - 1 });
+    const { photoIndex, galleryPhotos } = this.state;
+    this.setState({ photoIndex: (photoIndex + galleryPhotos.length - 1) % galleryPhotos.length });
   };
 
   gotoNext = () => {
-    this.setState({ photoIndex: this.state.photoIndex + 1 });
+    const { photoIndex, galleryPhotos } = this.state;
+    this.setState({ photoIndex: (photoIndex + 1) % galleryPhotos.length });
   };
 
   closeViewer = () => {
@@ -50,6 +53,8 @@ export default class App extends Component {
   };
 
   render() {
+    const { photoIndex, isOpen, galleryPhotos } = this.state;
+
     return (
       <Fragment>
         <div className="Website">
@@ -63,14 +68,16 @@ export default class App extends Component {
             &copy; Bartłomiej Orawiec 2020 <a href="https://github.com/Orawko">Github</a>
           </footer>
         </div>
-        <ImgsViewer
-          imgs={this.state.galleryPhotos}
-          currImg={this.state.photoIndex}
-          isOpen={this.state.isOpen}
-          onClickPrev={this.gotoPrevious}
-          onClickNext={this.gotoNext}
-          onClose={this.closeViewer}
-        />
+        {isOpen && (
+          <Lightbox
+            mainSrc={galleryPhotos[photoIndex]}
+            nextSrc={galleryPhotos[(photoIndex + 1) % galleryPhotos.length]}
+            prevSrc={galleryPhotos[(photoIndex + galleryPhotos.length - 1) % galleryPhotos.length]}
+            onCloseRequest={() => this.closeViewer()}
+            onMovePrevRequest={() => this.gotoPrevious()}
+            onMoveNextRequest={() => this.gotoNext()}
+          />
+        )}
       </Fragment>
     );
   }
