@@ -1,0 +1,95 @@
+.headerBackground {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: fixed;
+    z-index: 1;
+}
+
+.headerBackground img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.contentOffset {
+    width: 100%;
+    height: 100vh;
+    visibility: hidden;
+}
+
+.title {
+    max-width: 66%;
+    font-size: 10vw;
+    margin: 2vw;
+    text-align: left;
+    font-weight: 100;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    max-width: 34%;
+    font-size: 2.2vw;
+}
+
+nav div {
+    margin: 0.8vw 2vw;
+    transition: transform .5s ease;
+    text-align: right;
+    text-shadow: 0 0 2em black;
+}
+
+nav div:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.flagIconContainer {
+    height: 2vw;
+    width: 4vw;
+    display: flex;
+    justify-content: center;
+    overflow: visible;
+    margin-left: calc(100% - 6vw);
+}
+
+.flagIconContainer img {
+    flex-shrink: 0;
+    max-height: 100%;
+    opacity: 0.7;
+}
+
+@media only screen and (max-width: 1023px) {
+    nav div {
+        font-size: 4vw;
+        font-weight: normal;
+    }
+
+    .flagIconContainer {
+        height: 4vw;
+        width: 7vw;
+        margin-left: calc(100% - 9vw);
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    nav div {
+        font-size: 5vw;
+        margin: 2vw;
+        font-weight: bold;
+        text-shadow: 0 0 2em black;
+    }
+
+
+    .title {
+        font-weight: normal;
+        font-size: 11vw;
+    }
+
+    .flagIconContainer {
+        height: 6vw;
+        width: 10vw;
+        margin-left: calc(100% - 12vw);
+    }
+}

@@ -1,12 +1,13 @@
 import React from 'react';
 import HeaderNav from './HeaderNav';
+import '../styles/Header.css';
 
-function Header({ projectsRef, aboutmeRef, contactRef }) {
+function Header({ refs, switchLanguage }) {
   return (
-    <header className="headercontainer">
-      <HeaderNav projectsRef={projectsRef} aboutmeRef={aboutmeRef} contactRef={contactRef}/>
+    <header className="headercontainer disable-select">
+      <HeaderNav refs={refs} switchLanguage={switchLanguage}/>
       <div className="headerBackground">
-        <img src={require('../img/header.jpg')} alt="Architecture building"/>
+        <img src={require('../img/mainPage/header.jpg')} alt="Architecture building"/>
       </div>
       <div className="contentOffset">
       </div>
