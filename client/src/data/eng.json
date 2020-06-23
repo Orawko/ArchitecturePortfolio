@@ -1,0 +1,76 @@
+{
+  "projects": {
+    "source_of_inspiration": {
+      "title": "SOURCE OF INSPIRATION",
+      "description": "“Sources of inspiration” is a project of Art hotel where the creation process is surrounded by the water. Everything starts in the meditation template located in a cave. We can find sources of the water and brain wave there. From that point creation process follow the water flow. Mistical atmosphere in the temple help the artists in a meditation, concentration and idea development. Those ideas can be developed in Park cabins, which „growing out” of the ground in the park. Following the water stream, next step is Artists’ house. The place, where ideas become a reality. Workshops space, theater and artist rooms provide a space needed to creation process. The last step, right after waterfalls is gallery - the main entrance to the Art Hotel.",
+      "details": {
+        "type": "Public building",
+        "location": "Turin",
+        "date": "2020",
+        "tools": "AutoCAD, SketchUp, Adobe Photoshop",
+        "lat": 45.0707758,
+        "lng": 7.6738596,
+        "zoom": 13
+      },
+      "index": 0,
+      "img": "source_of_inspiration.jpg",
+      "alt": "Meditation template for artists"
+    },
+    "sport_centre": {
+      "title": "SPORTS CENTRE",
+      "description": "Sport centre is designed to provide residents a friendly and high quality public space. The building is located on a forest plot, surrounded by a beautiful natural environment. This location has become an impulse to propose an object almost entirely made of wood. This natural material will create the right atmosphere of this place. Another advantages of its use are easy and quick assembly from prefabricated elements, obtaining light and visually aesthetic spaces. Choosing a sports function of a building results from the demand of residents for this type of public space, giving the opportunity not only to organize sports competitions, but also other cultural events.",
+      "details": {
+        "type": "Public building",
+        "location": "Troniny",
+        "date": "2020",
+        "tools": "ArchiCAD, Lumion, Adobe Photoshop",
+        "lat": 51.0104221,
+        "lng": 18.8327279,
+        "zoom": 14
+      },
+      "index": 1,
+      "img": "sports_centre.jpg",
+      "alt": "Sport centre building"
+    },
+    "regietow": {
+      "title": "HOLIDAY COTTAGES",
+      "description": "The farm complex with a stud, a group of summer houses and an outdoor riding school was designed on the southern edge of the village, in isolation from other buildings, as a riding point cooperating with the existing Huculski horse farm.\nIt is designed in a radial arrangement, in the central part houses a stable with access to the riding school. To the west of them is the house of the owners - designed as a three-generation building. Around them, in a semi-circular arrangement, is a holiday cottages complex.",
+      "details": {
+        "type": "Farm buildings",
+        "location": "Regietow",
+        "date": "2019",
+        "tools": "ArchiCAD, Lumion, Adobe Photoshop",
+        "lat": 49.4791905,
+        "lng": 21.2201491,
+        "zoom": 16
+      },
+      "index": 2,
+      "img": "regietow.jpg",
+      "alt": "Holiday cottages in sunny day"
+    },
+    "bagry": {
+      "title": "BAGRY KRAKOW",
+      "description": "The premise of the project is to give a new life to the areas surrounding the Bagry reservoir. The total area of the urban concept is 171.3 ha. The area includes elements with various functions, building typology and urban morphology. We find here areas of single-family and multi-family housing, creating various systems and also production or office buildings. However, the most important part of the project is the area of the immediate vicinity of the lake, whose design is aimed at giving high tourist values and creating a friendly public space.",
+      "details": {
+        "type": "Urban planning",
+        "location": "Krakow",
+        "date": "2018/2019",
+        "tools": "AutoCAD, Adobe Photoshop ",
+        "lat": 50.0328522,
+        "lng": 19.9863714,
+        "zoom": 16
+      },
+      "index": 3,
+      "img": "bagry.jpg",
+      "alt": "Lake surroundings"
+    }
+  },
+  "aboutMe": {
+    "description": "I am a 4th year student of Architecture at the Cracow University of Technology. I constantly develop my passion for design and architecture, gaining knowledge about new trends. I also deepen my skills in creating projects using modern design software. I developed these skills during my work at the APA Zalewski Bubak architectural office in Krakow (July - September 2019). As an engineering thesis, I designed the Sport Center in Troniny, which is on the list of the above projects. My passions are drawing and watercolor painting, which I create in my free time."
+  },
+  "headers": {
+    "projects": "PROJECTS",
+    "aboutMe": "ABOUT ME",
+    "contact": "CONTACT"
+  }
+}

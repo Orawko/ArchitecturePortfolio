@@ -46,26 +46,58 @@
     }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1023px) {
     .aboutMe {
         flex-direction: column;
         text-align: center;
+        margin: auto;
     }
 
     .aboutMePhoto {
         margin: auto;
-        width: 50vw;
-        height: 50vw;
+    }
+
+    .aboutMeText {
+        width: 80vw;
+        margin: 20px auto;
+        font-size: 2.5vw;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .aboutMePhoto {
+        width: 60vw;
+        height: 60vw;
     }
 
     .aboutMePhoto img {
         flex-shrink: 0;
-        max-height: 50vw;
+        max-height: 60vw;
     }
 
     .aboutMeText {
         width: 80vw;
         margin: 10px auto;
-        font-size: 3.5vw;
+        font-size: 4.5vw;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .aboutMe {
+        margin: 2vw auto 1vw;
+    }
+
+    .aboutMePhoto {
+        width: 20vw;
+        height: 20vw;
+        margin-left: 10vw;
+    }
+
+    .aboutMePhoto img {
+        max-height: 20vw;
+    }
+
+    .aboutMeText {
+        font-size: 1.2vw;
     }
 }

@@ -1,0 +1,76 @@
+{
+  "projects": {
+    "source_of_inspiration": {
+      "title": "ŹRÓDŁA INSPIRACJI",
+      "description": "Projekt hotelu dla artystów, w którym cały proces tworzenia otoczony jest wodą. Wszystko zaczyna się w świątyni medytacji, zlokalizowanej w jaskini. Jest to zarówno źródło strumienia, jak i nowego pomysłu. Od tego momentu proces tworzenia podąża za przepływem wody. Mistyczna atmosfera rodzi w głowach artystów nowe pomysły, które mogą rozwinąć w znajdującym się nieopodal parku. Podążając za strumieniem, kolejnym miejscem jest dom artystów. To tutaj pomysły stają się rzeczywistością. Pokoje, wraz z pracowniami plastycznymi oraz teatr, zapewniają przestrzeń niezbędną dla procesu tworzenia. Ostatnim krokiem jest galeria, będąca wejściem do hotelu, gdzie zwiedzający mogą podziwiać powstałą tu twórczość.",
+      "details": {
+        "type": "Użyteczność publiczna",
+        "location": "Turyn",
+        "date": "2020",
+        "tools": "AutoCAD, SketchUp, Adobe Photoshop",
+        "lat": 45.0707758,
+        "lng": 7.6738596,
+        "zoom": 13
+      },
+      "index": 0,
+      "img": "source_of_inspiration.jpg",
+      "alt": "Świątynia medytacji artystów."
+    },
+    "sport_centre": {
+      "title": "CENTRUM SPORTU",
+      "description": "Zaprojektowany ośrodek sportowy w Troninach ma na celu zapewnienie mieszkańcom przyjaznej i wysokiej jakości przestrzeni publicznej. Budynek położony jest na działce leśnej, w otoczeniu pięknego środowiska naturalnego. To właśnie lokalizacja stała się impulsem do zaprojektowania obiektu niemal w całości wykonanego z drewna. Ten naturalny materiał stworzy odpowiednią atmosferę dla tego miejsca oraz umożliwi łatwy i szybki montaż z prefabrykatów. Wybór funkcji sportowej budynku wynika z zapotrzebowania mieszkańców na tego typu przestrzeń, umożliwiając nie tylko organizację zawodów sportowych, lecz także innych wydarzeń kulturalnych.",
+      "details": {
+        "type": "Użyteczność publiczna",
+        "location": "Troniny",
+        "date": "2020",
+        "tools": "ArchiCAD, Lumion, Adobe Photoshop",
+        "lat": 51.0104221,
+        "lng": 18.8327279,
+        "zoom": 14
+      },
+      "index": 1,
+      "img": "sports_centre.jpg",
+      "alt": "Budynek centrum sportu"
+    },
+    "regietow": {
+      "title": "ZESPÓŁ DOMKÓW LETNISKOWYCH",
+      "description": "Zaprojektowany został zespół zagrodowy ze stanicą, domkami letniskowymi oraz odkrytą ujeżdżalnią koni. Zlokalizowany na południowym skraju wsi Regietów, w odosobnieniu od pozostałej zabudowy, jako punkt jeździecki współpracujący z istniejącą stadniną koni Huculskiego. Zespół urbanistyczny zaprojektowany jest w układzie promienistym. W części centralnej znajduje się stajnia dla koni, połączona dojściem z ujeżdżalnią. Na zachód od nich usytuowany jest trójpokoleniowy dom gospodarzy. Wokół, w układzie półkolistym, zaprojektowany został kompleks domków letniskowych.",
+      "details": {
+        "type": "Zabudowa zagrodowa",
+        "location": "Regietów",
+        "date": "2019",
+        "tools": "ArchiCAD, Lumion, Adobe Photoshop",
+        "lat": 49.4791905,
+        "lng": 21.2201491,
+        "zoom": 16
+      },
+      "index": 2,
+      "img": "regietow.jpg",
+      "alt": "Domki letniskowe w słoneczny dzień"
+    },
+    "bagry": {
+      "title": "ZALEW BAGRY",
+      "description": "Założeniem opracowania jest nadanie terenom otaczającym zalew Bagry nowego życia. Całkowita powierzchnia terenu w granicach opracowania koncepcji urbanistycznej wynosi 171,3 ha. Obszar obejmuje tereny o zróżnicowanych funkcjach, typologii zabudowy oraz morfologii tkanki urbanistycznej. Znajdujemy tutaj tereny zabudowy mieszkaniowej jednorodzinnej i wielorodzinnej tworzącej różnorodne układy, zabudowę o charakterze produkcyjnym oraz biurową. Jednak najbardziej istotną częścią terenu jest obszar bezpośredniego sąsiedztwa zalewu, którego zaprojektowanie ma na celu nadanie dużych walorów turystycznych i stworzenie przyjaznej przestrzeni publicznej.",
+      "details": {
+        "type": "Urbanistyka",
+        "location": "Kraków",
+        "date": "2018/2019",
+        "tools": "AutoCAD, Adobe Photoshop ",
+        "lat": 50.0328522,
+        "lng": 19.9863714,
+        "zoom": 16
+      },
+      "index": 3,
+      "img": "bagry.jpg",
+      "alt": "Otoczenie jeziora"
+    }
+  },
+  "aboutMe": {
+    "description": "Jestem studentką IV roku architektury na Politechnice Krakowskiej. Stale rozwijam swoją pasję do projektowania oraz architektury, zdobywając wiedzę o nowych trendach. Pogłębiam także umiejętności tworzenia projektów przy użyciu nowoczesnego oprogramowania. Umiejętności te rozwijałam podczas pracy w biurze architektonicznym APA Zalewski Bubak w Krakowie (lipiec - wrzesień 2019). Jako pracę inżynierską zaprojektowałem Centrum Sportu w Troninach, które znajduje się na liście powyższych projektów. Moją pasją jest rysowanie oraz malarstwo akwarelowe, które tworzę w wolnym czasie."
+  },
+  "headers": {
+    "projects": "PROJEKTY",
+    "aboutMe": "O MNIE",
+    "contact": "KONTAKT"
+  }
+}
