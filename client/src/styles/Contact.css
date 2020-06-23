@@ -40,6 +40,20 @@
     }
 
     .contactIcon {
-        font-size: 7vw;
+        font-size: 8vw;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .contactValue {
+        font-size: 2.5vw;
+    }
+
+    .contactIcon {
+        font-size: 3.2vw;
+    }
+
+    .contact div {
+        margin: 0.6vw;
     }
 }

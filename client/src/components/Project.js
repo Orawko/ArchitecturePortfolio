@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Project({ data, openGallery, number }) {
+function Project({ data, openGallery }) {
   return (
     <div className="project">
       <article className="projectSpecs">
@@ -15,7 +15,12 @@ function Project({ data, openGallery, number }) {
           </div>
           <div>
             <i className="icon-location detailIcon"/>
-            <h3 className="detailValue">{data.details.location}</h3>
+            <h3>
+              <a href={`https://www.google.com/maps/@${data.details.lat},${data.details.lng},${data.details.zoom}z`}
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 className="detailValue">{data.details.location}</a>
+            </h3>
           </div>
           <div>
             <i className="icon-calendar detailIcon"/>
@@ -27,8 +32,8 @@ function Project({ data, openGallery, number }) {
           </div>
         </div>
       </article>
-      <div className="projectPhoto" onClick={() => openGallery(number)}>
-        <img src={require(`../img/${data.img}`)} alt={data.alt}/>
+      <div className="projectPhoto" onClick={() => openGallery(data.index)}>
+        <img src={require(`../img/mainPage/${data.img}`)} alt={data.alt}/>
       </div>
     </div>
   );

@@ -9,7 +9,8 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-image-lightbox": "^5.1.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "react-scroll-up-button": "^1.6.4"
   },
   "scripts": {
     "predeploy": "npm run build",

@@ -1,24 +1,30 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { LanguageContext } from '../providers/LanguageProvider';
+import dataENG from '../data/eng.json';
+import dataPL from '../data/pl.json';
 
-function HeaderNav({ projectsRef, aboutmeRef, contactRef }) {
+
+function HeaderNav({ refs, switchLanguage }) {
+  const language = useContext(LanguageContext);
+  const data = language === 'eng' ? dataENG : dataPL;
 
   const handleScrollToProjects = () => {
     window.scrollTo({
-      top: projectsRef().current.offsetTop,
+      top: refs.projects().current.offsetTop,
       behavior: 'smooth',
     });
   };
 
   const handleScrollToAboutme = () => {
     window.scrollTo({
-      top: aboutmeRef().current.offsetTop,
+      top: refs.aboutMe().current.offsetTop,
       behavior: 'smooth',
     });
   };
 
   const handleScrollToContact = () => {
     window.scrollTo({
-      top: contactRef().current.offsetTop,
+      top: refs.contact().current.offsetTop,
       behavior: 'smooth',
     });
   };
@@ -32,13 +38,18 @@ function HeaderNav({ projectsRef, aboutmeRef, contactRef }) {
       </h1>
       <nav>
         <div onClick={handleScrollToProjects}>
-          PROJECTS
+          {data.headers.projects}
         </div>
         <div onClick={handleScrollToAboutme}>
-          ABOUT ME
+          {data.headers.aboutMe}
         </div>
         <div onClick={handleScrollToContact}>
-          CONTACT
+          {data.headers.contact}
+        </div>
+        <div className="flagIconContainer" onClick={() => switchLanguage()}>
+          {language === 'eng'
+            ? <img src={require('../img/flagIcon/pl.svg')} alt="Zmień język na Polski"/>
+            : <img src={require('../img/flagIcon/eng.svg')} alt="Change language to English"/>}
         </div>
       </nav>
     </div>
