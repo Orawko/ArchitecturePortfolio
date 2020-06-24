@@ -33,23 +33,6 @@
     .aboutMe {
         flex-direction: column;
         text-align: center;
-    }
-
-    .aboutMePhoto {
-        margin: auto;
-    }
-
-    .aboutMeText {
-        width: 80vw;
-        margin: 20px auto;
-        font-size: 2.5vw;
-    }
-}
-
-@media only screen and (max-width: 1023px) {
-    .aboutMe {
-        flex-direction: column;
-        text-align: center;
         margin: auto;
     }
 
